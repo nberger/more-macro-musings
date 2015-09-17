@@ -6,5 +6,5 @@
   `(do
      ~@(for [[a b c] (partition 3 body)]
          (case b
-           := `(~'is (= (~a ~v) ~c))
-           :!= `(~'is (not= (~a ~v) ~c))))))
+           := `(#?(:clj clojure.test/is :cljs cljs.test/is) (= (~a ~v) ~c))
+           :!= `(#?(:clj clojure.test/is :cljs cljs.test/is) (not= (~a ~v) ~c))))))

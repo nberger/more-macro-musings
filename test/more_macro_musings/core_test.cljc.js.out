@@ -18,12 +18,17 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 
 ;;; Compilation warnings
 
-;;; NO COMPILATION WARNINGS!
+No such namespace: clojure.test
 
 
 ;;; Tests run error:
 
 Testing more-macro-musings.core-test
 
-Ran 1 tests containing 5 assertions.
-0 failures, 0 errors.
+ERROR in (given-macro-test) (ReferenceError:NaN:NaN)
+Uncaught exception, not in assertion.
+expected: nil
+  actual: #object[ReferenceError ReferenceError: java is not defined]
+
+Ran 1 tests containing 1 assertions.
+0 failures, 1 errors.
