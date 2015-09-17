@@ -1,5 +1,6 @@
 (ns more-macro-musings.core
-  (:require [clojure.test :refer [is]]))
+  (:require #?(:clj  [clojure.test :refer [is]]
+               :cljs [cljs.test :refer-macros [is]])))
 
 (defmacro given [v & body]
   `(do

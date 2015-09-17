@@ -1,0 +1,39 @@
+try{var values__7611__auto___5694 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,"bar"),new cljs.core.Keyword(null,"foo","foo",1268894036).cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"foo","foo",1268894036),"bar",new cljs.core.Keyword(null,"woo","woo",-5639190),"baz"], null)));
+var result__7612__auto___5695 = cljs.core.apply.call(null,cljs.core._EQ_,values__7611__auto___5694);
+if(cljs.core.truth_(result__7612__auto___5695)){
+clojure.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol("clojure.core","=","clojure.core/=",-1788080406,null),cljs.core.list(new cljs.core.Keyword(null,"foo","foo",1268894036),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"foo","foo",1268894036),"bar",new cljs.core.Keyword(null,"woo","woo",-5639190),"baz"], null)),"bar"),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__7611__auto___5694),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+} else {
+clojure.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol("clojure.core","=","clojure.core/=",-1788080406,null),cljs.core.list(new cljs.core.Keyword(null,"foo","foo",1268894036),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"foo","foo",1268894036),"bar",new cljs.core.Keyword(null,"woo","woo",-5639190),"baz"], null)),"bar"),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol("clojure.core","=","clojure.core/=",-1788080406,null),values__7611__auto___5694)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}
+
+}catch (e5689){if((e5689 instanceof java.lang.Throwable)){
+var t__7639__auto___5696 = e5689;
+clojure.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol("clojure.core","=","clojure.core/=",-1788080406,null),cljs.core.list(new cljs.core.Keyword(null,"foo","foo",1268894036),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"foo","foo",1268894036),"bar",new cljs.core.Keyword(null,"woo","woo",-5639190),"baz"], null)),"bar"),new cljs.core.Keyword(null,"actual","actual",107306363),t__7639__auto___5696,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+} else {
+throw e5689;
+
+}
+}
+
+
+
+
+;;; Compilation warnings
+
+Compiling test/more_macro_musings/core_test.cljc
+WARNING: No such namespace: clojure.test, could not locate clojure/test.cljs, clojure/test.cljc, or Closure namespace "" at line 7 test/more_macro_musings/core_test.cljc
+WARNING: Use of undeclared Var clojure.test/do-report at line 7 test/more_macro_musings/core_test.cljc
+
+
+
+;;; Tests run error:
+
+Testing more-macro-musings.core-test
+
+ERROR in (given-macro-test) (ReferenceError:NaN:NaN)
+Uncaught exception, not in assertion.
+expected: nil
+  actual: #object[ReferenceError ReferenceError: java is not defined]
+
+Ran 1 tests containing 1 assertions.
+0 failures, 1 errors.
