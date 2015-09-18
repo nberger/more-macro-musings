@@ -1,3 +1,11 @@
 test:
   post:
-    - lein doo node node-test
+    - lein doo node node-test once
+
+dependencies:
+  post:
+    - "echo Y | lein upgrade 2.5.2"
+
+machine:
+  node:
+    version: 0.12.7
