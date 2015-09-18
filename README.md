@@ -2,6 +2,8 @@
 
 Repository with the code for my post [_More portable (complex) macro musing_](http://blog.nberger.com.ar/blog/2015/09/18/more-portable-complex-macro-musing/)
 
+Build must be passing: [![Circle CI](https://circleci.com/gh/nberger/more-macro-musings.svg?style=svg)](https://circleci.com/gh/nberger/more-macro-musings) :)
+
 ## Usage
 
 The first commit is an original reduced version of the [juxt.iota/given](https://github.com/juxt/iota/blob/master/src/juxt/iota.cljc#L50) macro in clj.

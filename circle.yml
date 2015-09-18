@@ -1,0 +1,3 @@
+test:
+  post:
+    - lein doo node node-test
